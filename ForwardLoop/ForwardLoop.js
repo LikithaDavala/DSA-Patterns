@@ -1,6 +1,8 @@
 let array = [];
-let sums = [];
-let count = 0;
+let addSums = [];
+let subSums = [];
+let addCount = 0;
+let subCount = 0;
 function onClickPushNumbers() {
     debugger;
     let number = Number(document.getElementById("txtNumbers").value);
@@ -13,27 +15,27 @@ function onClickArraySumAdd(){
     debugger;
      for(i=0; i<array.length; i++){
         for(j=i+1; j<array.length; j++){
-            sums.push(array[i] + array[j]);
+            addSums.push(array[i] + array[j]);
             if((array[i] + array[j]) == 7){
-                count ++;
+                addCount ++;
             }
         }
     }
-    document.getElementById("divArraySumAdd").innerHTML =sums;
-    alert(count);
+    document.getElementById("divArraySumAdd").innerHTML =addSums;
+    alert(addCount);
 }
 // Subtracting the Two Numbers:
 function onClickArraySumSub(){
     debugger;
      for(i=0; i<array.length; i++){
         for(j=i+1; j<array.length; j++){
-            sums.push(array[i] - array[j]);
+            subSums.push(array[i] - array[j]);
             if(Math.abs(array[i] - array[j]) == 7){
-                count ++;
+                subCount ++;
             }
         }
     }
-    document.getElementById("divArraySumSub").innerHTML =sums;
+    document.getElementById("divArraySumSub").innerHTML =subSums;
 
-    alert(count);
+    alert(subCount);
 }
