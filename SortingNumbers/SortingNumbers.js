@@ -5,7 +5,9 @@ function onClickPushNumbers() {
     document.getElementById("divPush").innerHTML = numbers;
     document.getElementById("txtNumbers").value = null;
 }
-// Sorting Method
+
+
+// Sorting Method:
 function onClickSortNumbers() {
     let sorting = numbers.sort((a, b) => a - b);
     document.getElementById("divSort").innerHTML = sorting;
