@@ -16,48 +16,70 @@ function onClickSortNumbers() {
 }
 
 // While Loop for adding:
- let target = 9;
-    let left = 0;
-    let addSum = [];
-    let subSum =[];
-    let addCount = 0;
-let subCount = 0;
 function onClickAdding() {
+    let target = 10;
+    let left = 0;
+    let add = [];
+    let addCount = 0;
     debugger;
-    let right = (numbers.length)-1;
+    let right = (numbers.length) - 1;
     while (left < right) {
-        addSum = (numbers[left] + numbers[right])
-        if (addSum == target) {
+        add = (numbers[left] + numbers[right]);
+        if (add == target) {
             left++;
             right--;
             addCount++;
-        } else if (addSum > target) {
+        } else if (add > target) {
             right--;
-        } else if (addSum < target) {
+        } else if (add < target) {
             left++;
         }
-        alert(addCount);
     }
-    document.getElementById("divWhileLoopAdd").innerHTML = addSum;
+    document.getElementById("divWhileLoopAdd").innerHTML = addCount;
 }
 
 // While Loop for subtracting:
-function onClickSubtracting(){
+function onClickSubtracting() {
+    let target = 10;
+    let left = 0;
+    let sub = [];
+    let subCount = 0;
     debugger;
-    let right = (numbers.length)-1;
-    while(left < right){
-        subSum = (numbers[right] - numbers[left])
-        if(subSum == target){
-            left--;
-            right++;
-            subCount ++;
-        }else if (subSum > target){
-            right++;
-        }else if (subSum < target){
-            left--;
+    let right = (numbers.length) - 1;
+    while (left < right) {
+        sub = (numbers[right] - numbers[left]);
+        if (sub == target) {
+            left++;
+            right--;
+            subCount++;
+        } else if (sub > target) {
+            right--;
+        } else if (sub < target) {
+            left++;
         }
-        alert(subCount);
     }
-    document.getElementById("divWhileLoopSub").innerHTML = subSum;
+    document.getElementById("divWhileLoopSub").innerHTML = subCount;
 }
 
+// While Loop for Multiplication:
+function onClickMultiplication() {
+    let target = 10;
+    let left = 0;
+    let mul = [];
+    let mulCount = 0;
+    debugger;
+    let right = (numbers.length) - 1;
+    while (left < right) {
+        mul = (numbers[left] * numbers[right]);
+        if (mul == target) {
+            left++;
+            right--;
+            mulCount++;
+        } else if (mul > target) {
+            right--;
+        } else if (mul < target) {
+            left++;
+        }
+    }
+    document.getElementById("divWhileLoopMul").innerHTML = mulCount;
+}
