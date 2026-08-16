@@ -1,8 +1,4 @@
 let array = [];
-let addSums = [];
-let subSums = [];
-let addCount = 0;
-let subCount = 0;
 function onClickPushNumbers() {
     debugger;
     let number = Number(document.getElementById("txtNumbers").value);
@@ -12,6 +8,8 @@ function onClickPushNumbers() {
 }
 // Adding the Two Numbers:
 function onClickArraySumAdd(){
+    let addSums = [];
+let addCount = 0;
     debugger;
      for(i=0; i<array.length; i++){
         for(j=i+1; j<array.length; j++){
@@ -26,6 +24,8 @@ function onClickArraySumAdd(){
 }
 // Subtracting the Two Numbers:
 function onClickArraySumSub(){
+let subSums = [];
+let subCount = 0;
     debugger;
      for(i=0; i<array.length; i++){
         for(j=i+1; j<array.length; j++){
@@ -38,4 +38,21 @@ function onClickArraySumSub(){
     document.getElementById("divArraySumSub").innerHTML =subSums;
 
     alert(subCount);
+}
+
+// Multiplication the Two Numbers:
+function onClickArraySumMul(){
+let mul = [];
+let count = 0;
+    debugger;
+    for(i=0; i<array.length; i++){
+        for(j=i+1; j<array.length; j++){
+            mulSum.push(array[i] * array[j]);
+            if((array[i] * array[j]) == 18){
+                mulCount++;
+            }
+        }
+    }
+    document.getElementById("divArraySumMul").innerHTML=mulSums;
+    alert(mulCount);
 }
