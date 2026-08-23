@@ -72,3 +72,19 @@ let count = 0;
     document.getElementById("divArraySumMul").innerHTML=mulSums;
     alert(mulCount);
 }
+
+function onClickArraySumRem(){
+let mul = [];
+let count = 0;
+    debugger;
+    for(i=0; i<array.length; i++){
+        for(j=i+1; j<array.length; j++){
+            mulSum.push(array[i] * array[j]);
+            if((array[i] * array[j]) == 18){
+                mulCount++;
+            }
+        }
+    }
+    document.getElementById("divArraySumMul").innerHTML=mulSums;
+    alert(mulCount);
+}
