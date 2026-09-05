@@ -19,6 +19,10 @@ function onClickSlidingWindowIndex(){
     console.log(Math.max(...sum));
 }
 
+let _btnSlidingWindowIndex =document.getElementById("btnSlidingWindowIndex");
+
+addEventListener("click", onClickSlidingWindowIndex );
+
 
 //Sliding Window Index
 // let bigArray = [];
