@@ -14,7 +14,7 @@ let addCount = 0;
      for(i=0; i<array.length; i++){
         for(j=i+1; j<array.length; j++){
             addSums.push(array[i] + array[j]);
-            if((array[i] + array[j]) == 7){
+            if((array[i] + array[j]) == 9){
                 addCount ++;
             }
         }
