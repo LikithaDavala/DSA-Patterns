@@ -12,11 +12,12 @@ function onClickSlidingWindowIndex(){
             content += array[j]
         }
         bigArray.push(subArray);
-        sum.push(content);
+        let result = sum.push(content);
     }
     console.log(bigArray);
     console.log(sum);
     console.log(Math.max(...sum));
+    document.getElementById("divSliding").innerHTML = result;
 }
 
 let _btnSlidingWindowIndex =document.getElementById("btnSlidingWindowIndex");
