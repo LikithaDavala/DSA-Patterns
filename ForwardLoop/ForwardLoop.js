@@ -10,11 +10,12 @@ function onClickPushNumbers() {
 function onClickArraySumAdd(){
     let addSums = [];
 let addCount = 0;
+let target =9;
     debugger;
      for(i=0; i<array.length; i++){
         for(j=i+1; j<array.length; j++){
             addSums.push(array[i] + array[j]);
-            if((array[i] + array[j]) == 9){
+            if((array[i] + array[j]) == target){
                 addCount ++;
             }
         }
