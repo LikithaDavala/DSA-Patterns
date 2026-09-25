@@ -8,4 +8,5 @@ function onClickSubStrings(){
     }
     let result= Math.max(...subString);
     document.getElementById("divSubStrings").innerHTML = result;
+    console.log(result);
 }
